@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Russo+One&family=Share+Tech&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Share Tech", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+  text-align: center;
+  color: #e0aaff;
+}
+
+body {
+  background-color: #10002b;
+}
+
+h1 {
+  font-size: 50px;
+  background-color: #f72585;
+  color: #eef4ed;
+  height: 100px;
+  line-height: 100px;
+}
+
+h2 {
+  font-size: 40px;
+  height: 100px;
+  line-height: 100px;
+}
+
+.choises {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 35%;
+}
+
+img:hover {
+  filter: drop-shadow(0px 0px 5px #eef4ed);
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  gap: 50px;
+  font-size: 30px;
+}
+
+.msg {
+  padding: 20px;
+  border-radius: 25px;
+  margin-top: 30px;
+  font-size: 40px;
+  background-color: #7b2cbf;
+  color: #eef4ed;
+  display: none;
+  transition: transform 0.3s ease;
+}
+
+.zoomed {
+  transform: scale(1.1);
+}
+
+#newGame {
+  background-color: #f72585;
+  color: #eef4ed;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-top: 30px;
+  font-size: 40px;
+  display: inline-block;
+}
+
+@media (max-width: 520px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .score {
+    font-size: 24px;
+  }
+
+  .msg,
+  #newGame {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 330px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .choises {
+    gap: 15px;
+  }
+}
